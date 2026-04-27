@@ -3,6 +3,6 @@ mod wasm {
 }
 
 pub use wasm::{
-    Asset, Client as MockPriceOracleClient, Contract as MockPriceOracle, PriceOracleError,
+    Asset, Client as MockPriceOracleClient, Contract as MockPriceOracle,
     WASM as MockPriceOracleWASM,
 };

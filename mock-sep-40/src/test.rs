@@ -30,7 +30,7 @@ fn test_stable_price_feed() {
     let start_block = 123;
     env.ledger().set(LedgerInfo {
         timestamp: start_time,
-        protocol_version: 25,
+        protocol_version: 26,
         sequence_number: start_block,
         network_id: Default::default(),
         base_reserve: 10,
@@ -71,7 +71,7 @@ fn test_stable_price_feed() {
     // pass time
     env.ledger().set(LedgerInfo {
         timestamp: start_time + 6 * 24 * 60 * 60,
-        protocol_version: 25,
+        protocol_version: 26,
         sequence_number: start_block + (6 * 24 * 60 * 60) / 5,
         network_id: Default::default(),
         base_reserve: 10,
@@ -101,7 +101,7 @@ fn test_price_feed() {
     let start_block = 123;
     env.ledger().set(LedgerInfo {
         timestamp: start_time,
-        protocol_version: 25,
+        protocol_version: 26,
         sequence_number: start_block,
         network_id: Default::default(),
         base_reserve: 10,
@@ -142,7 +142,7 @@ fn test_price_feed() {
     // pass time
     env.ledger().set(LedgerInfo {
         timestamp: start_time + 325,
-        protocol_version: 25,
+        protocol_version: 26,
         sequence_number: start_block + 325 / 5,
         network_id: Default::default(),
         base_reserve: 10,

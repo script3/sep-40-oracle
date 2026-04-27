@@ -22,3 +22,15 @@ soroban-sdk = { workspace = true }
 
 [dev-dependencies]
 soroban-sdk = { workspace = true, features = ["testutils"] }
+
+[patch.crates-io]
+soroban-sdk = { path = "../../../stellar/rs-soroban-sdk/soroban-sdk" }
+soroban-sdk-macros = { path = "../../../stellar/rs-soroban-sdk/soroban-sdk-macros" }
+soroban-meta = { path = "../../../stellar/rs-soroban-sdk/soroban-meta" }
+soroban-spec = { path = "../../../stellar/rs-soroban-sdk/soroban-spec" }
+soroban-spec-rust = { path = "../../../stellar/rs-soroban-sdk/soroban-spec-rust" }
+soroban-ledger-snapshot = { path = "../../../stellar/rs-soroban-sdk/soroban-ledger-snapshot" }
+soroban-token-sdk = { path = "../../../stellar/rs-soroban-sdk/soroban-token-sdk" }
+soroban-token-spec = { path = "../../../stellar/rs-soroban-sdk/soroban-token-spec" }
+stellar-asset-spec = { path = "../../../stellar/rs-soroban-sdk/stellar-asset-spec" }
+
